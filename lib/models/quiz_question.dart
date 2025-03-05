@@ -4,4 +4,10 @@ class QuizQuestion {
 
   final String text;
   final List<String> answers;
+
+  List<String> getSheffledAnswers() {
+    final sheffledList = List.of(answers);
+    sheffledList.shuffle();
+    return  sheffledList;
+  }
 }
