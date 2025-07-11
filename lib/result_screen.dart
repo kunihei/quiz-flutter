@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:adv_basics/data/questions.dart';
-import 'package:adv_basics/questions_sammary.dart';
+import 'package:adv_basics/questions_summary.dart';
 
 class ResultScreen extends StatelessWidget {
   const ResultScreen({
@@ -43,7 +43,7 @@ class ResultScreen extends StatelessWidget {
             Text(
                 'You answered $numCorrectQuestions out of $numTotalQuestions questions correctly!'),
             SizedBox(height: 30),
-            QuestionsSammary(
+            QuestionsSummary(
               summaryData,
             ),
             SizedBox(height: 30),
@@ -55,6 +55,5 @@ class ResultScreen extends StatelessWidget {
         ),
       ),
     );
-    ;
   }
 }
