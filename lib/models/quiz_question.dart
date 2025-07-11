@@ -5,9 +5,9 @@ class QuizQuestion {
   final String text;
   final List<String> answers;
 
-  List<String> getSheffledAnswers() {
-    final sheffledList = List.of(answers);
-    sheffledList.shuffle();
-    return  sheffledList;
+  List<String> getShuffledAnswers() {
+    final shuffledList = List.of(answers);
+    shuffledList.shuffle();
+    return shuffledList;
   }
 }

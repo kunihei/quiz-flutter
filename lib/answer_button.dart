@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 
 class AnswerButton extends StatelessWidget {
   // AnswerButton(this.answerText, this.answerAction, {super.key});
-  AnswerButton({
+  const AnswerButton({
     super.key,
     required this.answerText,
     required this.answerAction,
   });
 
   final String answerText;
-  void Function() answerAction;
+  final void Function() answerAction;
 
   @override
   Widget build(BuildContext context) {
@@ -31,6 +31,5 @@ class AnswerButton extends StatelessWidget {
         textAlign: TextAlign.center,
       ),
     );
-    ;
   }
 }
